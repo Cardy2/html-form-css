@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" href="layout1.css">
+        <title>Web Language Survey</title>
+    </head>
+    <body>
+        <h1 class="header">Web Language Survey</h1>
+        <form action="process.php" method="post">
+            <fieldset>
+                <legend>Add User</legend>
+
+                <div class="personal" id="first-name-box">
+                    <label for="firstName">First Name</label>
+                    <input type="text" name="first_name" id="firstName">
+                </div>
+
+                <div class="personal" id="last-name-box">
+                    <label for="lastName">Last Name</label>
+                    <input type="text" name="last_name" id="lastName">
+                </div>
+
+                <div class="personal" id="email-box">
+                    <label for="email">Email</label>
+                    <input type="email" name="email" id="email">
+                </div>
+
+                <div class="group">
+                    <div class="status">
+                        <label for="status">Status</label>
+                        <select name="status" id="status">
+                            <option value="student">Student</option>
+                            <option value="teacher">Teacher</option>
+                            <option value="guest">Guest</option>
+                        </select>
+                    </div>
+
+                    <div class="date">
+                        <label for="date">Date</label>
+                        <input type="date" id="date" name="date">
+                    </div>
+                </div>
+                    <br>
+
+                <div>
+                <!-- <h3>Choose One</h3> -->
+                <p>Choose your favorite web language:</p>
+                    <div class="choose">
+                        <div class="box" id="box1">
+                            <input class="bubble" type="radio" id="html"
+                            name="fav_language" value="HTML">
+                            <label for="html">HTML</label>
+                        </div>
+                        <br>
+                        <div class="box" id="box2">
+                            <input class="bubble" type="radio" id="css"
+                            name="fav_language" value="CSS">
+                            <label for="css">CSS</label>
+                        </div>
+                        <br>
+                        <div class="box" id="box3">
+                            <input class="bubble" type="radio" id="javascript" name="fav_language" value="JavaScript">
+                            <label for="javascript">JS</label>
+                        </div>
+                    </div>
+                </div>
+                <div>
+                    <br>
+                <div class="comments">
+                    <label for="comments">Comments</label>
+                    <textarea name="comments" id="comments" placeholder="Comments"></textarea>
+                </div>
+                    <br>
+                <div class="news-terms">
+                    <div class="newsletter">
+                        <label for="newsletter">Sign Up for the Newsletter</label>
+                        <input type="checkbox" id="newsletter" name="wantNewsletter" value="yes">
+                    </div>
+
+                    <div class="terms">
+                        <label for="terms">Agree to Terms & Conditions</label>
+                        <input type="checkbox" id="terms" name="agreeToTermsConditions" value="yes">
+                    </div>
+                </div>
+                    <br>
+                    <div class="submit">
+                        <input type="submit" name="submit" value="submit">
+                    </div>
+                    </div>
+
+            </fieldset>
+
+
+
+        </form>
+    </body>
+
+
+</html>
+
+
+<!-- In this project, you are creating a basic survey form for
+    the students and faculty of a/A to find out what their favorite
+    programming language is with any additional comments they would
+    like to submit. -->
